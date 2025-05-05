@@ -1166,3 +1166,5 @@ button:active {
 button:active::before {
     filter: blur(0.2em);
 }
+`;
+document.head.appendChild(styleTag);
