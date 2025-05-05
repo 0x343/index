@@ -1,6 +1,5 @@
 document.getElementById("0xHydfvXx").innerHTML = `
 
-  <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
@@ -12,9 +11,8 @@ document.getElementById("0xHydfvXx").innerHTML = `
           </div>
         </div>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-  <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
@@ -25,9 +23,8 @@ document.getElementById("0xHydfvXx").innerHTML = `
           </div>
         </div>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Services Section -->
     <section id="services" class="services section">
 
       <div class="container">
@@ -42,7 +39,7 @@ document.getElementById("0xHydfvXx").innerHTML = `
                 <h3>Select Market & Bet</h3>
               <p>Players choose the desired market (Hong Kong, Singapore, Sydney, China, Cambodia, or Bull Eye) and place a bet.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
@@ -52,7 +49,7 @@ document.getElementById("0xHydfvXx").innerHTML = `
                 <h3>Official Results</h3>
               <p>The draw results are taken directly from the official sources of each market, ensuring full transparency.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
@@ -62,7 +59,7 @@ document.getElementById("0xHydfvXx").innerHTML = `
                 <h3>Blockchain Security</h3>
               <p>All transactions are recorded in the blockchain, decentralized, ensuring no manipulation or alteration of data.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
@@ -72,7 +69,7 @@ document.getElementById("0xHydfvXx").innerHTML = `
                 <h3>Anonymity & Privacy</h3>
               <p>Players can participate without having to reveal personal identity, and without KYC, player privacy remains intact.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
@@ -82,7 +79,7 @@ document.getElementById("0xHydfvXx").innerHTML = `
                 <h3>Fast & Efficient</h3>
               <p>Without the involvement of a third party, transactions are fast and costs are lower than conventional lotteries.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
@@ -92,15 +89,14 @@ document.getElementById("0xHydfvXx").innerHTML = `
                 <h3>No Initial Deposit</h3>
               <p>Lotto Chain allows you to place bets without any initial deposit. Simply use the MetaMask wallet app, and you can start betting right away.</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section>
 
-  <!-- About Section -->
     <section id="about" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -133,9 +129,8 @@ document.getElementById("0xHydfvXx").innerHTML = `
 
       </div>
 
-    </section><!-- /About Section -->
+    </section>
 
-  <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
@@ -146,9 +141,8 @@ document.getElementById("0xHydfvXx").innerHTML = `
           </div>
         </div>
       </div>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Resume Section -->
     <section id="resume" class="resume section">
 
       <div class="container">
@@ -160,87 +154,87 @@ document.getElementById("0xHydfvXx").innerHTML = `
             <div class="resume-item">
               <h4>I</h4>
               <p>Functional development and testing.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>II</h4>
               <p>The launch of the public communication Beta (Testnet) has been planned. The Beta stage of communication will be present on the testnet network.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
             
             <div class="resume-item">
               <h4>III</h4>
               <p>Mainnet launch and international market integration.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>IV</h4>
               <p>Introduction to the project and various services.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>V</h4>
               <p>Notifications. The system will send automatic notifications to users who win bets. These notifications can be in the form of sound or visual elements that appear on the interface in real-time.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
             
             <div class="resume-item">
               <h4>VI</h4>
               <p>Smart contract optimization and network scalability enhancement.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>VII</h4>
               <p>Social Decentralizer Feature (Like). Users can give likes to certain betting activities or entries. This feature uses a decentralized approach, allowing social interaction without centralized control.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>VIII</h4>
               <p>To create a decentralized platform for secure and transparent lottery and betting games on blockchain.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>IX</h4>
               <p>Social Decentralizer Feature (Comments). Users can leave comments on certain betting entries or results, creating an open and transparent community discussion space.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>X</h4>
               <p>Statistics & Data. Provides a statistics panel that displays important data such as bet amounts, total payouts, active players, recent winners, and average bet analysis. These statistics will be rendered visually and updated in real-time.</p>
-            </div><!-- Edn Resume Item -->
-
+            </div>
+            
             <div class="resume-item">
               <h4>XI</h4>
               <p>To develop a blockchain-based ecosystem that ensures fairness and transparency in betting and lottery games.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
             
             <div class="resume-item">
               <h4>XII</h4>
               <p>To implement a decentralized lottery and betting system that provides provably fair and verifiable outcomes.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>XIII</h4>
               <p>To build a fully decentralized gambling experience on blockchain that guarantees security, transparency, and fairness.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>XIV</h4>
               <p>To enhance the integrity of online betting and lottery through blockchain technology.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
             
             <div class="resume-item">
               <h4>XV</h4>
               <p>Addition of multi-chain features and ecosystem expansion.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
             
             <div class="resume-item">
               <h4>XVI</h4>
               <p>Development of innovative features and global partnerships to enhance the ecosystem.</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
               <h4>XVII</h4>
               <p>Coming Soon...</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
           </div>
 
@@ -248,7 +242,7 @@ document.getElementById("0xHydfvXx").innerHTML = `
 
       </div>
 
-    </section><!-- /Resume Section -->
+    </section>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
