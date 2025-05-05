@@ -1,4 +1,4 @@
-document.getElementById("konten").innerHTML = `
+document.getElementById("Xgfsyi6436hXc").innerHTML = `
   <div class="container">
     <h1>Terms and Conditions</h1>
     <p><strong>Lotto Chain 2025</strong><br>Version 1.0 – Updated April 20, 2025</p>
