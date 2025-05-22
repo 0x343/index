@@ -18,7 +18,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <style> #preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; z-index: 9999; display: flex; align-items: center; justify-content: center; } .spinner { width: 40px; height: 40px; border: 4px solid #00b7ff; border-top: 4px solid #000; border-radius: 50%; animation: spin 1s linear infinite; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } </style>
+  <style> #preloaders { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; z-index: 9999; display: flex; align-items: center; justify-content: center; } .spinners { width: 40px; height: 40px; border: 4px solid #00b7ff; border-top: 4px solid #000; border-radius: 50%; animation: spin 1s linear infinite; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } </style>
 </head>
 
 <body class="index-page">
@@ -63,11 +63,11 @@
   </header>
 
   <main class="main">
-    
+    <div id="preloaders"><div class="spinners"></div></div>
     <div id="XBgc52875Cfs"></div>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<div id="preloader"><div class="spinner"></div></div>
+<div id="preloader"></div>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -82,7 +82,7 @@
   <script src="statis/XBgc52875CfsIndex.js"></script>
   <script src="statis/XufJhgcXf635hdd642CnIndexCss.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script> window.addEventListener('load', () => { const preloader = document.getElementById('preloader'); if (preloader) { preloader.style.opacity = '0'; setTimeout(() => preloader.remove(), 7000); } }); </script>
+  <script> window.addEventListener('load', () => { const preloaders = document.getElementById('preloaders'); if (preloaders) { preloaders.style.opacity = '0'; setTimeout(() => preloaders.remove(), 7000); } }); </script>
 
 </body>
 </html>
