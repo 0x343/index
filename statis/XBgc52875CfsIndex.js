@@ -1,4 +1,45 @@
 document.getElementById("XBgc52875Cfs").innerHTML = `
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index" class="logo d-flex align-items-center">
+        <a href="index"><img src="img/logo.svg" width="40">
+        </a>
+        <h1 class="sitename">Lotto Chain</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">About</a></li>
+<li><a href="#services">Service</a></li>
+<li><a href="#about">Benefits</a></li
+<li><a href="#team">Team</a></li>
+<li><a href="#backed-by">Backed</a></li>
+<li><a href="#resume">Roadmap</a></li>
+<li><a href="#footer">Contact</a></li>
+<a href="LottoChainWhitepaper_v01.pdf">
+  <button type="button" style="background-color: #1a1a1a; color: white; font-size: 12px; padding: 7px 17px;">
+    Whitepaper
+  </button>
+</a>
+<li class="dropdown">
+  <a><span>Beta Documentation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+  <ul>
+    <li><a href="cs">Docs Menu</a></li
+    <li><a href="cs">Data Structures</a></li>
+    <li><a href="cs">System</a></li>
+    <li><a href="cs">Tutorials</a></li>
+    <li><a href="cs">For Developers</a></li>
+  </ul>
+</li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav> 
+    </div>
+  </header>
+
+  <main class="main">
     
     <section id="hero" class="hero section dark-background">
 
@@ -472,4 +513,6 @@ document.getElementById("XBgc52875Cfs").innerHTML = `
       </div>
     </div>
   </footer>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
   `;
