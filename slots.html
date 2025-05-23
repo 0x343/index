@@ -146,9 +146,9 @@ button:active::before {
   <div class="container">
     <h1>Candy Slot Machine</h1>
     <div id="slots" class="slot-machine">
-      <div class="slot"><img src="https://i.imgur.com/fYzA1DT.png" alt="Candy1" /></div>
-      <div class="slot"><img src="https://i.imgur.com/AMDOYO4.png" alt="Candy2" /></div>
-      <div class="slot"><img src="https://i.imgur.com/BKQ1v9N.png" alt="Candy3" /></div>
+      <div class="slot"><img src="img/logo.svg" alt="Pizza1" /></div>
+      <div class="slot"><img src="https://i.imgur.com/AMDOYO4.png" alt="Pizza2" /></div>
+      <div class="slot"><img src="https://i.imgur.com/BKQ1v9N.png" alt="Pizza3" /></div>
     </div>
     <button onclick="spin()" id="spinBtn">Spin</button>
     <div id="result"></div>
@@ -167,14 +167,12 @@ button:active::before {
 
   <script>
     const candies = [
-      "https://i.imgur.com/fYzA1DT.png",
+      "img/logo.svg",
       "https://i.imgur.com/K0sFPLb.png",
       "https://i.imgur.com/qX6t8JK.png",
-      "https://i.imgur.com/AMDOYO4.png",
+      "img/logo.png",
       "https://i.imgur.com/BKQ1v9N.png",
       "https://i.imgur.com/l5CdJ7v.png",
-      "https://i.imgur.com/Soa6gVz.png",
-      "https://i.imgur.com/ERbNRr5.png"
     ];
 
     let score = +localStorage.getItem("score") || 0;
@@ -249,7 +247,7 @@ button:active::before {
     function dropCoins(amount) {
       for (let i = 0; i < amount; i++) {
         const el = document.createElement("div");
-        el.innerHTML = `<img src="https://i.imgur.com/KPaY5zQ.png" width="24" height="24" />`;
+        el.innerHTML = `<img src="img/logoline.svg" width="24" height="24" />`;
         el.className = "coin";
         el.style.left = `${Math.random() * 100}%`;
         el.style.top = `-${Math.random() * 50}px`;
