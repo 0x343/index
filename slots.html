@@ -2,44 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pizza Slot</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @keyframes drop {
-      0% { transform: translateY(-100px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #fce4ec, #d1c4e9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
-    .coin {
-      animation: drop 1s ease-out;
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+    }
+    h1 {
+      font-size: 28px;
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+    .slot-machine {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      font-size: 48px;
+      margin-bottom: 20px;
     }
     .slot img {
       width: 60px;
       height: 60px;
     }
+    button {
+    font-size: 1.2em;
+    padding: 10px 23px;
+    border-radius: 0.7em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+    font-family: Ubuntu, sans-serif;
+}
+
+ .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 0.9em;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    z-index: -1;
+    filter: blur(0);
+    transition: filter 0.4s ease, opacity 0.4s ease;
+    opacity: 1;
+}
+
+button:hover::before {
+    filter: blur(1.2em);
+    opacity: 1;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button:active::before {
+    filter: blur(0.2em);
+}
+    #result {
+      margin-top: 16px;
+      font-size: 18px;
+      color: #ad1457;
+    }
+    .info {
+      margin-top: 20px;
+    }
+    .info p {
+      margin: 0;
+    }
+    .music-control {
+      margin-top: 12px;
+    }
+    .music-control button {
+      background: none;
+      color: #1e88e5;
+      text-decoration: underline;
+      font-size: 14px;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+    }
+    #coins {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 10;
+    }
+    @keyframes drop {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .coin {
+      position: absolute;
+      animation: drop 1s ease-out;
+    }
   </style>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 to-purple-200">
-  <div class="text-center bg-white p-8 rounded-2xl shadow-xl space-y-4 w-full max-w-md">
-    <h1 class="text-3xl font-bold text-pink-600">Candy Slot Machine</h1>
-    <div id="slots" class="flex justify-center space-x-4 text-6xl">
+<body>
+  <div class="container">
+    <h1>Candy Slot Machine</h1>
+    <div id="slots" class="slot-machine">
       <div class="slot"><img src="https://i.imgur.com/fYzA1DT.png" alt="Candy1" /></div>
       <div class="slot"><img src="https://i.imgur.com/AMDOYO4.png" alt="Candy2" /></div>
       <div class="slot"><img src="https://i.imgur.com/BKQ1v9N.png" alt="Candy3" /></div>
     </div>
-
-    <button onclick="spin()" id="spinBtn" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-xl">
-      Spin
-    </button>
-
-    <div id="result" class="text-lg font-semibold text-pink-700"></div>
-    <div class="mt-4">
+    <button onclick="spin()" id="spinBtn">Spin</button>
+    <div id="result"></div>
+    <div class="info">
       <p>Score: <span id="score">0</span> | XP: <span id="xp">0</span> | Level: <span id="level">1</span></p>
     </div>
-    <div class="mt-2">
-      <button onclick="toggleSound()" class="text-sm text-blue-500 underline">Toggle Music</button>
+    <div class="music-control">
+      <button onclick="toggleSound()">Toggle Music</button>
     </div>
-    <div id="coins" class="absolute top-0 left-0 w-full flex flex-col items-center z-10"></div>
+    <div id="coins"></div>
   </div>
 
   <audio id="bgMusic" loop>
@@ -48,15 +158,16 @@
 
   <script>
     const candies = [
-      "https://i.imgur.com/fYzA1DT.png", // cherry
-      "https://i.imgur.com/K0sFPLb.png", // lemon
-      "https://i.imgur.com/qX6t8JK.png", // grapes
-      "https://i.imgur.com/AMDOYO4.png", // candy
-      "https://i.imgur.com/BKQ1v9N.png", // lollipop
-      "https://i.imgur.com/l5CdJ7v.png", // apple
-      "https://i.imgur.com/Soa6gVz.png", // cupcake
-      "https://i.imgur.com/ERbNRr5.png"  // ice cream
+      "https://i.imgur.com/fYzA1DT.png",
+      "https://i.imgur.com/K0sFPLb.png",
+      "https://i.imgur.com/qX6t8JK.png",
+      "https://i.imgur.com/AMDOYO4.png",
+      "https://i.imgur.com/BKQ1v9N.png",
+      "https://i.imgur.com/l5CdJ7v.png",
+      "https://i.imgur.com/Soa6gVz.png",
+      "https://i.imgur.com/ERbNRr5.png"
     ];
+
     let score = +localStorage.getItem("score") || 0;
     let xp = +localStorage.getItem("xp") || 0;
     let level = +localStorage.getItem("level") || 1;
@@ -129,8 +240,8 @@
     function dropCoins(amount) {
       for (let i = 0; i < amount; i++) {
         const el = document.createElement("div");
-        el.innerHTML = `<img src="https://i.imgur.com/KPaY5zQ.png" width="24" height="24" />`; // coin image
-        el.className = "coin absolute";
+        el.innerHTML = `<img src="https://i.imgur.com/KPaY5zQ.png" width="24" height="24" />`;
+        el.className = "coin";
         el.style.left = `${Math.random() * 100}%`;
         el.style.top = `-${Math.random() * 50}px`;
         coins.appendChild(el);
