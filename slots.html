@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Slot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes drop {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .coin {
+      animation: drop 1s ease-out;
+    }
+    .slot img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 to-purple-200">
+  <div class="text-center bg-white p-8 rounded-2xl shadow-xl space-y-4 w-full max-w-md">
+    <h1 class="text-3xl font-bold text-pink-600">Candy Slot Machine</h1>
+    <div id="slots" class="flex justify-center space-x-4 text-6xl">
+      <div class="slot"><img src="https://i.imgur.com/fYzA1DT.png" alt="Candy1" /></div>
+      <div class="slot"><img src="https://i.imgur.com/AMDOYO4.png" alt="Candy2" /></div>
+      <div class="slot"><img src="https://i.imgur.com/BKQ1v9N.png" alt="Candy3" /></div>
+    </div>
+
+    <button onclick="spin()" id="spinBtn" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-xl">
+      Spin
+    </button>
+
+    <div id="result" class="text-lg font-semibold text-pink-700"></div>
+    <div class="mt-4">
+      <p>Score: <span id="score">0</span> | XP: <span id="xp">0</span> | Level: <span id="level">1</span></p>
+    </div>
+    <div class="mt-2">
+      <button onclick="toggleSound()" class="text-sm text-blue-500 underline">Toggle Music</button>
+    </div>
+    <div id="coins" class="absolute top-0 left-0 w-full flex flex-col items-center z-10"></div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    const candies = [
+      "https://i.imgur.com/fYzA1DT.png", // cherry
+      "https://i.imgur.com/K0sFPLb.png", // lemon
+      "https://i.imgur.com/qX6t8JK.png", // grapes
+      "https://i.imgur.com/AMDOYO4.png", // candy
+      "https://i.imgur.com/BKQ1v9N.png", // lollipop
+      "https://i.imgur.com/l5CdJ7v.png", // apple
+      "https://i.imgur.com/Soa6gVz.png", // cupcake
+      "https://i.imgur.com/ERbNRr5.png"  // ice cream
+    ];
+    let score = +localStorage.getItem("score") || 0;
+    let xp = +localStorage.getItem("xp") || 0;
+    let level = +localStorage.getItem("level") || 1;
+
+    const scoreEl = document.getElementById("score");
+    const xpEl = document.getElementById("xp");
+    const levelEl = document.getElementById("level");
+    const resultEl = document.getElementById("result");
+    const slots = document.querySelectorAll(".slot");
+    const coins = document.getElementById("coins");
+
+    scoreEl.textContent = score;
+    xpEl.textContent = xp;
+    levelEl.textContent = level;
+
+    function spin() {
+      document.getElementById("spinBtn").disabled = true;
+      resultEl.textContent = "Spinning...";
+      const interval = setInterval(() => {
+        slots.forEach(slot => {
+          const img = document.createElement("img");
+          img.src = candies[Math.floor(Math.random() * candies.length)];
+          img.alt = "Candy";
+          img.width = 60;
+          img.height = 60;
+          slot.innerHTML = '';
+          slot.appendChild(img);
+        });
+      }, 100);
+
+      setTimeout(() => {
+        clearInterval(interval);
+        const final = [0, 1, 2].map(() => candies[Math.floor(Math.random() * candies.length)]);
+        slots.forEach((slot, i) => {
+          slot.innerHTML = `<img src="${final[i]}" alt="Candy" width="60" height="60">`;
+        });
+
+        const [a, b, c] = final;
+        if (a === b && b === c) {
+          resultEl.textContent = "Jackpot! Three matched!";
+          score += 10;
+          xp += 10;
+          dropCoins(10);
+        } else if (a === b || b === c || a === c) {
+          resultEl.textContent = "Two matched! Nice!";
+          score += 3;
+          xp += 3;
+        } else {
+          resultEl.textContent = "Try again!";
+          score = Math.max(0, score - 1);
+        }
+
+        if (xp >= level * 20) {
+          xp = 0;
+          level++;
+          alert("Level up to " + level + "!");
+        }
+
+        scoreEl.textContent = score;
+        xpEl.textContent = xp;
+        levelEl.textContent = level;
+        localStorage.setItem("score", score);
+        localStorage.setItem("xp", xp);
+        localStorage.setItem("level", level);
+
+        document.getElementById("spinBtn").disabled = false;
+      }, 2000);
+    }
+
+    function dropCoins(amount) {
+      for (let i = 0; i < amount; i++) {
+        const el = document.createElement("div");
+        el.innerHTML = `<img src="https://i.imgur.com/KPaY5zQ.png" width="24" height="24" />`; // coin image
+        el.className = "coin absolute";
+        el.style.left = `${Math.random() * 100}%`;
+        el.style.top = `-${Math.random() * 50}px`;
+        coins.appendChild(el);
+        setTimeout(() => coins.removeChild(el), 2000);
+      }
+    }
+
+    function toggleSound() {
+      const audio = document.getElementById("bgMusic");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>
