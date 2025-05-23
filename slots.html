@@ -144,11 +144,11 @@ button:active::before {
 </head>
 <body>
   <div class="container">
-    <h1>Candy Slot Machine</h1>
+    <h1>Mini Pizza Slot Machine</h1>
     <div id="slots" class="slot-machine">
       <div class="slot"><img src="img/logo.svg" alt="Pizza1" /></div>
-      <div class="slot"><img src="https://i.imgur.com/AMDOYO4.png" alt="Pizza2" /></div>
-      <div class="slot"><img src="https://i.imgur.com/BKQ1v9N.png" alt="Pizza3" /></div>
+      <div class="slot"><img src="img/pizza.svg" alt="Pizza2" /></div>
+      <div class="slot"><img src="img/btc.svg" alt="Pizza3" /></div>
     </div>
     <button onclick="spin()" id="spinBtn">Spin</button>
     <div id="result"></div>
@@ -168,11 +168,11 @@ button:active::before {
   <script>
     const candies = [
       "img/logo.svg",
-      "https://i.imgur.com/K0sFPLb.png",
-      "https://i.imgur.com/qX6t8JK.png",
+      "img/pizza.svg",
+      "img/btc.svg",
       "img/logo.png",
-      "https://i.imgur.com/BKQ1v9N.png",
-      "https://i.imgur.com/l5CdJ7v.png",
+      "img/pizza.svg",
+      "img/btc.svg",
     ];
 
     let score = +localStorage.getItem("score") || 0;
@@ -197,7 +197,7 @@ button:active::before {
         slots.forEach(slot => {
           const img = document.createElement("img");
           img.src = candies[Math.floor(Math.random() * candies.length)];
-          img.alt = "Candy";
+          img.alt = "Pizza";
           img.width = 60;
           img.height = 60;
           slot.innerHTML = '';
