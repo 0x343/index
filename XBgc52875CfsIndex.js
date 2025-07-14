@@ -244,6 +244,64 @@ Her strengths lie in creating a fun and inclusive environment while ensuring str
         </div>
       </div>
 
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm6.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Zaidra</h4>
+            <span style="color: #00b7ff;">Community Manager</span>
+            <p>Welcoming new members and answering their questions.
+<br><br>
+Removing FUD, spam, and any negativity.
+<br><br>
+Sharing updates and helping hype important announcements.
+<br><br>
+Supporting the team during presale, launch, and post-launch.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm7.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Olatokunem</h4>
+            <span style="color: #00b7ff;">Community Manager</span>
+            <p>I'm an excellent raider.
+I can destroy raids and keep the community active as a moderator as well.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm8.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Saheed Yusuf</h4>
+            <span style="color: #00b7ff;">Community Manager</span>
+            <p>Engaging the community – Chatting, replying, and keeping the vibe alive.
+<br><br>
+Sharing updates – Posting news, announcements, and events.
+<br><br>
+Moderating chats – Keeping things clean and safe (no spam, no FUD).
+<br><br>
+Answering questions – Helping new members and guiding users.
+<br><br>
+Growing the community – Inviting, onboarding, and boosting activity.
+<br><br>
+Feedback loop – Collecting ideas from the community and sending to the team.
+<br><br>
+Organizing events – AMAs, giveaways, contests, etc.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="col-12">
         <center><h4>Our Commitment</h4></center>
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
