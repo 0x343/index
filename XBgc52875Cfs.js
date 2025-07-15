@@ -152,12 +152,12 @@ document.getElementById("XBgc52875Cfs").innerHTML = `
     <div class="row gy-4">
       <div class="col-12" data-aos="fade-up" data-aos-delay="100">
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
-          Meet the minds behind the Lotto Chain project anonymously united by a shared vision.
+          Meet the minds behind the Faylotto project anonymously united by a shared vision.
         </h5><br>
 
         <center><h4>Our Vision</h4></center><br>
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
-          Lotto Chain is an innovative blockchain-based project designed to revolutionize 
+          Faylotto is an innovative blockchain-based project designed to revolutionize 
           the <strong>transparent and decentralized lottery experience</strong>. We are a dedicated team of professionals including developers, strategists, and visionaries collaborating to build secure, scalable, and inclusive solutions 
           for the future of decentralized gaming and rewards.
         </h5><br>
@@ -165,7 +165,7 @@ document.getElementById("XBgc52875Cfs").innerHTML = `
         <center><h4>Pseudonymous Approach</h4></center><br>
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
           In order to keep the focus on the technology and long-term vision of the project, 
-          the Lotto Chain team operates under pseudonyms. This approach protects individual privacy while allowing 
+          the Faylotto team operates under pseudonyms. This approach protects individual privacy while allowing 
           our work, results, and integrity to speak for themselves. Identities may be disclosed selectively to strategic 
           partners, such as venture capital firms or key backers, under strict non-disclosure agreements (NDAs) 
           to ensure transparency where necessary without compromising personal security.
@@ -173,7 +173,7 @@ document.getElementById("XBgc52875Cfs").innerHTML = `
 
         <center><h4>Core Team Members</h4></center><br>
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
-          Our core contributors, identified by pseudonyms, bring diverse expertise to Lotto Chain:
+          Our core contributors, identified by pseudonyms, bring diverse expertise to Faylotto:
         </h5><br><br>
       </div>
 
@@ -309,11 +309,25 @@ I'm confident using platforms like Discord, Telegram, and X, and I know how to k
         </div>
       </div>
 
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm10.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Krypyon</h4>
+            <span style="color: #00b7ff;">Growth & Community Strategis</span>
+            <p>I help Web3 projects grow by building organic visibility, activating their communities, and crafting narrative-driven strategies that stick.
+            <br><br>I’ve worked with multiple meme and utility projects, helping them boost engagement, attract real participants, and gain momentum without paid hype.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="col-12">
         <center><h4>Our Commitment</h4></center>
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
           While our team chooses to remain pseudonymous, our commitment to transparency, measurable outcomes, and active engagement 
-          is unwavering. Lotto Chain operates under a legally registered entity in <strong>[Insert Jurisdiction, e.g., Seychelles or Singapore]</strong>, 
+          is unwavering. Faylotto operates under a legally registered entity in <strong>[Insert Jurisdiction, e.g., Seychelles or Singapore]</strong>, 
           ensuring legal compliance and operational professionalism. For vetted partners such as VCs or infrastructure collaborators, 
           we offer identity verification under NDA to establish trust without compromising team privacy.
         </h5>
