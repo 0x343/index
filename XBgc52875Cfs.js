@@ -323,6 +323,75 @@ I'm confident using platforms like Discord, Telegram, and X, and I know how to k
         </div>
       </div>
 
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm11.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Saheed Yusuf</h4>
+            <span style="color: #00b7ff;">Community Manager</span>
+            <p>Engaging the community – Chatting, replying, and keeping the vibe alive.
+<br><br>
+Sharing updates – Posting news, announcements, and events.
+<br><br>
+Moderating chats – Keeping things clean and safe (no spam, no FUD).
+<br><br>
+Answering questions – Helping new members and guiding users.
+<br><br>
+Growing the community – Inviting, onboarding, and boosting activity.
+<br><br>
+Feedback loop – Collecting ideas from the community and sending to the team.
+<br><br>
+Organizing events – AMAs, giveaways, contests, etc</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm13.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Donny</h4>
+            <span style="color: #00b7ff;">Moderator Shiller</span>
+            <p>I will love to work as a moderator and community shiller for your community helping to bring in active chads and help increase engagement in the community.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm12.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Noir Node</h4>
+            <span style="color: #00b7ff;">Web3 enthusiast</span>
+            <p>WEB3, Shiller, Community manager/moderator, Raider.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="img/tm14.png" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Ziron</h4>
+            <span style="color: #00b7ff;">Project Manager</span>
+            <p>Explain a little about your skills:
+ I’m good at turning big ideas into clear plans. I break things down into tasks, assign them to the right people, and make sure everyone knows what they’re doing and when.
+<br><br>
+I keep devs, marketers, and community managers working in sync. Everyone stays on the same page, so we avoid miscommunication and delays.
+<br><br>
+And when problems come up,delays, miscommunication, whatever I jump in, figure out what’s wrong, and help fix it fast so the team can keep moving.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="col-12">
         <center><h4>Our Commitment</h4></center>
         <h5 style="font-size: 13px; padding-inline: 16px; color: #F1F1F1;">
