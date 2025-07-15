@@ -351,12 +351,17 @@ Organizing events – AMAs, giveaways, contests, etc</p>
       <div class="col-lg-6">
         <div class="team-member d-flex">
           <div class="member-img">
-            <img src="img/tm13.png" class="img-fluid" alt="" loading="lazy">
+            <img src="img/tm14.png" class="img-fluid" alt="" loading="lazy">
           </div>
           <div class="member-info flex-grow-1">
-            <h4>Donny</h4>
-            <span style="color: #00b7ff;">Moderator Shiller</span>
-            <p>I will love to work as a moderator and community shiller for your community helping to bring in active chads and help increase engagement in the community.</p>
+            <h4>Ziron</h4>
+            <span style="color: #00b7ff;">Project Manager</span>
+            <p>Explain a little about your skills:
+ I’m good at turning big ideas into clear plans. I break things down into tasks, assign them to the right people, and make sure everyone knows what they’re doing and when.
+<br><br>
+I keep devs, marketers, and community managers working in sync. Everyone stays on the same page, so we avoid miscommunication and delays.
+<br><br>
+And when problems come up,delays, miscommunication, whatever I jump in, figure out what’s wrong, and help fix it fast so the team can keep moving.</p>
           </div>
         </div>
       </div>
@@ -377,17 +382,12 @@ Organizing events – AMAs, giveaways, contests, etc</p>
       <div class="col-lg-6">
         <div class="team-member d-flex">
           <div class="member-img">
-            <img src="img/tm14.png" class="img-fluid" alt="" loading="lazy">
+            <img src="img/tm13.png" class="img-fluid" alt="" loading="lazy">
           </div>
           <div class="member-info flex-grow-1">
-            <h4>Ziron</h4>
-            <span style="color: #00b7ff;">Project Manager</span>
-            <p>Explain a little about your skills:
- I’m good at turning big ideas into clear plans. I break things down into tasks, assign them to the right people, and make sure everyone knows what they’re doing and when.
-<br><br>
-I keep devs, marketers, and community managers working in sync. Everyone stays on the same page, so we avoid miscommunication and delays.
-<br><br>
-And when problems come up,delays, miscommunication, whatever I jump in, figure out what’s wrong, and help fix it fast so the team can keep moving.</p>
+            <h4>Donny</h4>
+            <span style="color: #00b7ff;">Moderator Shiller</span>
+            <p>I will love to work as a moderator and community shiller for your community helping to bring in active chads and help increase engagement in the community.</p>
           </div>
         </div>
       </div>
