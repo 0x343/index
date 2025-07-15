@@ -315,7 +315,7 @@ I'm confident using platforms like Discord, Telegram, and X, and I know how to k
             <img src="img/tm10.png" class="img-fluid" alt="" loading="lazy">
           </div>
           <div class="member-info flex-grow-1">
-            <h4>Krypyon</h4>
+            <h4>Krypton</h4>
             <span style="color: #00b7ff;">Growth & Community Strategis</span>
             <p>I help Web3 projects grow by building organic visibility, activating their communities, and crafting narrative-driven strategies that stick.
             <br><br>I’ve worked with multiple meme and utility projects, helping them boost engagement, attract real participants, and gain momentum without paid hype.</p>
